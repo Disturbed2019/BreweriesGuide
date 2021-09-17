@@ -1,0 +1,15 @@
+.BrewerieItem{
+  display: flex;
+  justify-content: center;
+  &__map{
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    max-height: 240px;
+  }
+  &__content{
+    width: 100%;
+  }
+
+
+}
