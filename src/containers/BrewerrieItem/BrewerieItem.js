@@ -6,8 +6,8 @@ import './BrewerieItem.scss'
 
 const BrewerieItem = (props) => {
     return (
-        <div className={'BrewerieItem'}>
-            <div className={'BrewerieItem__map'}>
+        <div className={'BreweriesItem'}>
+            <div className={'BreweriesItem__map'}>
                 {props.breweries.longitude && props.breweries.latitude
                     ? <YMaps>
                         <Map
@@ -22,8 +22,8 @@ const BrewerieItem = (props) => {
                     : <p>Geolocation Data not found </p>
                 }
             </div>
-            <div className={'BrewerieItem__content'}>
-                <h3 className={'BrewerieItem__title'}>{props.breweries.name}</h3>
+            <div className={'BreweriesItem__content'}>
+                <h3 className={'BreweriesItem__title'}>{props.breweries.name}</h3>
                 <div className="BreweriesItem__contacts">
                     <p>{props.breweries.country}, {props.breweries.state}, {props.breweries.city}</p>
                     {props.breweries.phone
